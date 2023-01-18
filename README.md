@@ -4,7 +4,7 @@ A simple and (currently) incomplete Markdown to HTML converter I put together in
 
 ## Note
 
-This is currently an incomplete version with numerous bugs and will surely not adhere the standards.
+This is currently an incomplete version with numerous bugs and will surely not adhere to the standards.
 
 ## Building
 
