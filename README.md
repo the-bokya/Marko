@@ -6,8 +6,6 @@ A simple and (currently) incomplete Markdown to HTML converter I put together in
 
 This is currently an incomplete version with numerous bugs and will surely not adhere the standards.
 
-
-
 ## Building
 
 Building using `ghc`.
@@ -15,8 +13,6 @@ Building using `ghc`.
 ```bash
 ghc markdown.hs
 ```
-
-
 
 ## Usage
 
@@ -45,3 +41,7 @@ He is:
 + yo!
 + bro!
 ```
+
+Result:
+
+![The converted HTML](Screenshot%202023-01-19%20at%2002-07-16%20Screenshot.png "Output")
