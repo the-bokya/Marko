@@ -60,9 +60,6 @@ li = enclose "li"
 p :: String -> String
 p = enclose "p"
 -- helper functions
-join :: [String] -> String
-join [] = ""
-join (x:xs) = x ++ join xs
 
 paras :: String -> [[String]]
 paras xs = map lines separated
@@ -105,7 +102,7 @@ general xs
 toDeco :: (String -> String) -> String -> String -> String
 toDeco f deco xs = let indices = zip (map T.unpack (T.splitOn (T.pack deco) (T.pack xs))) [1..]
                   in
-                  join $ map (\x -> if even (snd x) then f (fst x) else fst x) indices
+                  concat $ map (\x -> if even (snd x) then f (fst x) else fst x) indices
 
 toEmStrong :: String -> String
 toEmStrong xs = toDeco emStrong "***" xs
